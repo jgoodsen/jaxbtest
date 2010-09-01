@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+
+GET     /session/login                          LoginController.login
+GET     /session/logout                         LoginController.logout
+
+GET     /bn/pi_reg_home                         BnController.pi_reg_home
+GET     /bn/pi_reg_account                      BnController.pi_reg_account
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
+
+GET     /jaxb_parse_test   Application.jaxb_parse_test

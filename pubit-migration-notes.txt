@@ -1,0 +1,61 @@
+PubIt to Playframework Migration Notes
+
+PARADIGM SHIFTS:
+	- Stop putting app data in the session.
+	- Everywhere we are stashing things into the session, we should stash into the 
+	  Scope.Flash or pass it through the call chain
+	- Exceptions are caught, logged and then execution resumes silently - makes debugging problems horrible - slow and hard - either handle exceptions or don't catch them and hide them.
+
+cd pubit_play
+sh update_code.sh
+cp -r ../pubit_app/WebContent/WEB-INF/lib/* lib/
+mkdir -p app/views/bn && cp -r ../pubit_app/WebContent/WEB-INF/templates app/views/bn
+cp -r ../pubit_app/WebContent/Images/* public/images/
+cp -r ../pubit_app/WebContent/js public
+cp -r ../pubit_app/WebContent/css public
+
+## Later on, merge public/js into public/javascripts
+## Later on, merge public/css into public/stylesheets
+
+## remove an .svn directories that were copied
+find . -name ".svn" -type d -exec rm -rf {} \;
+
+Replace all %{expansions}% to ${variable} in html files
+
+Create BnController class and the index method.
+
+Add the route:
+GET     /bn                                     BnController.index
+
+Remove the class com/bn/pubit/client/util/Base64.java - it's redundant, makes errors and not used
+
+In each html page that has a hook in it, move the hook call to the corresponding controller method.  Use @Before annotations to share hooks across actions
+
+History of moving hook methods out of HTML into Controllers:
+
+	pi_reg_account
+		- Top line had %{run:com.bn.pubit.client.hook.AccountRegistration:account}%
+		  This hook code is now called from the controller method BnController.pi_reg_account()
+		
+
+    LookupData hook class
+		- Made all the hook methods public, so we can call them directly from controllers
+        - Probably deserves a compose method refactoring - right after calling a hook, stash the results in renderArgs()
+		- Bad Legacy Code: Hook methods catch exceptions and only log them - hiding them from the user - fix those ...
+
+Need to make attributes of WebServices class public, so that we can easily turn them into Model classes using reflection - might even be able to use them as our model classes then.
+
+CLEANUP NEEDED
+How/Why is the "time" hash entry used?  Its passed into all the logout methods, but I don't see it being used
+
+Moved jars from lib/se into lib so play will pick them up
+
+Exception Handling is poorly implemented - exceptions are masked in many places making it
+  (a) hard to debug originating exceptions and (b) worse we keep on running like everythings ok - for example
+   a user could hit the Account page and see not data in any dropdown fields, yet there is no indication
+   that the backend services to populate the dropdowns are not working.
+
+callGetWS() in WSUtil should use a finally to close up the resources instead of doing it in every try/catch handler
+
+Any calls to session.getAttribute() in the WS service classes need to be changed - STOP STASHING DATAINTO THE SESSION!!!
+

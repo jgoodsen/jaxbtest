@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="se">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/se/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/se/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/se/mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

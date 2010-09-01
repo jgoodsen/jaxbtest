@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/axis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-fileupload-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fictionwiseframework.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxrpc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-discovery-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb1-impl-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saaj.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javacsv.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sqljdbc4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cos.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wsdl4j-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jxl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.wsdl_1.6.2.v200806030405.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pubit_props_jg.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,42 @@
+<component name="libraryTable">
+  <library name="tmplib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tmplib/commons-io-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/commons-fileupload-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/sqljdbc4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/wsdl4j-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/axis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/commons-discovery-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/spring-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/pubit_props_jg.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javacsv.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/saaj.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/httpcore-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.wsdl_1.6.2.v200806030405.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/jaxb1-impl-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/junit-4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/jaxrpc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/jxl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/cos.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/fictionwiseframework.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/httpclient-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/se/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/se/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tmplib/se/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
