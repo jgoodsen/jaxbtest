@@ -8,20 +8,14 @@
 
 package com.test;
 
-import com.test.WSClassStub;
-
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * <p>Java class for Setting complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="Setting">
  *   &lt;complexContent>
@@ -34,13 +28,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Setting", propOrder = {
-    "settingId",
-    "settingValue"
+        "settingId",
+        "settingValue"
 })
 @XmlRootElement(name = "Setting")
 public class Setting extends WSClassStub {
@@ -52,11 +46,11 @@ public class Setting extends WSClassStub {
 
     /**
      * Gets the value of the settingId property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getSettingId() {
         return settingId;
@@ -64,11 +58,11 @@ public class Setting extends WSClassStub {
 
     /**
      * Sets the value of the settingId property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setSettingId(String value) {
         this.settingId = value;
@@ -76,11 +70,11 @@ public class Setting extends WSClassStub {
 
     /**
      * Gets the value of the settingValue property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getSettingValue() {
         return settingValue;
@@ -88,22 +82,23 @@ public class Setting extends WSClassStub {
 
     /**
      * Sets the value of the settingValue property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setSettingValue(String value) {
         this.settingValue = value;
     }
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "Setting [settingId=" + settingId + ", settingValue=" + settingValue + "]";
-	}
+    /* (non-Javadoc)
+      * @see java.lang.Object#toString()
+      */
+
+    @Override
+    public String toString() {
+        return "Setting [settingId=" + settingId + ", settingValue=" + settingValue + "]";
+    }
 
 }
