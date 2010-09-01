@@ -11,16 +11,16 @@
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="library" name="se" level="project" />
     <orderEntry type="module" module-name="play-1.0.3.2" />
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="library" name="tmplib" level="project" />
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/junit-4.7.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="tmplib" level="project" />
   </component>
 </module>
 
