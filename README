@@ -1,7 +1,14 @@
 This is a test case to show how JAXB Marshalling works in a standalone unit test, but it fails when run inside a Play Application controller.
 
-I use IntelliJ and checked in the jaxbtest.iml file - so you can start with that, otherwise, you'll have to setup your IDE if it's eclipse or something else.
+I use IntelliJ and checked in the jaxbtest.iml file for your convenience, as well as the .idea project directory.
 
-To run the unit test that passes,   run:
+The unit test is com.test.TestJaxbUnmarshaller - I run it inside IntelliJ.  It passes with flying colors.
 
-   test/com/
+To expose the JAXB Unmarshalling problem, I took the code that passes in the unit test into the Application.jaxb_parse_test method.
+
+To see the error, startup play (play run) and then hit the url  http://localhost:9000/jaxb_parse_test
+
+I'm not a JAXB expert or anything - this code was taken from a project I'm trying to migrate to Play.  Thanks for any help in finding this defect!
+
+John Goodsen
+author of http://radtrack.com - Lean/Kanban for the masses.

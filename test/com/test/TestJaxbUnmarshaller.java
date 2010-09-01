@@ -1,4 +1,4 @@
-package com.pubit;
+package com.test;
 
 import org.junit.Test;
 
