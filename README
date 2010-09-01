@@ -1,0 +1,7 @@
+This is a test case to show how JAXB Marshalling works in a standalone unit test, but it fails when run inside a Play Application controller.
+
+I use IntelliJ and checked in the jaxbtest.iml file - so you can start with that, otherwise, you'll have to setup your IDE if it's eclipse or something else.
+
+To run the unit test that passes,   run:
+
+   test/com/
